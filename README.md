@@ -1,13 +1,6 @@
 <!-- Logo -->
-<p align="center">
-  <a href="https://qoqo.io">
-    <img height="128" width="128" src="https://qoqo.io/img/logo.png">
-  </a>
-</p>
+<a href="https://qoqo.io" target="_blank"><img src="https://qoqo.io/img/logo-full-green.png"></a>
 <!-- Name -->
-<h1 align="center">
-  <a href="https://qoqo.io" target="_blank"><img src="https://qoqo.io/img/logo-full-green.png"></a>
-</h1>
 <!-- Content -->
 <p>QOQO UI is a question & answers social interface based on a fork of the <a href="https://github.com/Qolzam/react-social-network">Simple React Social Network</a> theme. The goal of this project is to create a social centric UI that makes it easy for users to search and post questions and answers to the QOQO Decentralized Question & Anwsers Protocol.</p>
 <!-- Social Links -->
