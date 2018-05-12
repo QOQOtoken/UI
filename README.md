@@ -6,13 +6,15 @@
 </p>
 <!-- Name -->
 <h1 align="center">
-  <a href="https://qoqo.io">QOQO</a>:rocket:
+  <a href="https://qoqo.io">QOQO</a>
 </h1>
-
-[![Facebook(src/assets/images/facebook.png?raw=true)](https://www.facebook.com/QOQO-194770977822040)
-[![Twitter(src/assets/images/twitter.png?raw=true)](https://twitter.com/QOQOio)
-[![Telegram(src/assets/images/telegram.png?raw=true)](https://t.me/QOQOcommunity)
-[![Medium(src/assets/images/medium.png?raw=true)](https://medium.com/qoqoio)
-[![Instagram(src/assets/images/instagram.png?raw=true)](hhttps://instagram.com/qoqo_io/)
-
-QOQO is a questions and answer website meant to take things to the next level.
+<!-- Content -->
+<p>QOQO UI is a question & answers social interface based on a fork of the <a href="https://github.com/Qolzam/react-social-network">Simple React Social Network</a> theme. The goal of this project is to create a social centric UI that makes it easy for users to search and post questions and answers to the QOQO Decentralized Question & Anwsers Protocol.</p>
+<!-- Social Links -->
+<h2>Connect</h2>
+<a href="https://twitter.com/QOQOio">Twitter</a>
+<a href="https://t.me/QOQOcommunity">Telegram</a>
+<a href="https://discord.gg/rVDDjdC">Discord</a>
+<a href="https://medium.com/qoqoio">Medium</a>
+<a href="https://www.facebook.com/QOQO-194770977822040">Facebook</a>
+<a href="https://instagram.com/qoqo_io/">Instagram</a>
