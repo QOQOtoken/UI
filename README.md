@@ -10,6 +10,6 @@
   <li><a href="https://t.me/QOQOcommunity">Telegram</a></li>
   <li><a href="https://discord.gg/rVDDjdC">Discord</a></li>
   <li><a href="https://medium.com/qoqoio">Medium</a></li>
-  <li><a href="https://www.facebook.com/QOQO-194770977822040">Facebook</a></li>
+  <li><a href="https://www.facebook.com/qoqoio/">Facebook</a></li>
   <li><a href="https://instagram.com/qoqo_io/">Instagram</a></li>
 <ul>
