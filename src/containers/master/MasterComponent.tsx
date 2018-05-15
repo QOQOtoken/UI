@@ -12,7 +12,6 @@ import {Map} from 'immutable'
 // - Import components
 
 import MasterLoading from 'src/components/masterLoading'
-import SendFeedback from 'src/components/sendFeedback'
 import MasterRouter from 'src/routes/MasterRouter'
 import { IMasterComponentProps } from './IMasterComponentProps'
 import { IMasterComponentState } from './IMasterComponentState'
@@ -128,7 +127,6 @@ export class MasterComponent extends Component<IMasterComponentProps, IMasterCom
                 <title>React Social Network</title>
                 <link rel='canonical' href='https://github.com/Qolzam/react-social-network' />
             </Helmet>
-       {sendFeedbackStatus ? <SendFeedback /> : ''}
         <div className='master__progress' style={{ display: (progress.visible ? 'block' : 'none') }}>
           <LinearProgress variant='determinate' value={progress.percent} />
         </div>

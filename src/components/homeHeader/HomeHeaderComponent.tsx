@@ -180,11 +180,6 @@ export class HomeHeaderComponent extends Component<IHomeHeaderComponentProps, IH
 
       <AppBar position='fixed' color='secondary'>
         <Toolbar>
-          {/* Left side */}
-
-          <IconButton onClick={this.onToggleSidebar} >
-            <SvgDehaze color='primary' style={{ cursor: 'pointer' }} />
-          </IconButton>
           {/* Header title */}
           <Typography variant='title' color='primary' style={{ marginLeft: '15px' }} >
             {config.settings.appName}

@@ -167,7 +167,6 @@ export class HomeComponent extends Component<IHomeComponentProps, IHomeComponent
   componentWillMount() {
     const { global, clearData, loadData, authed, defaultDataEnable, isVerifide, goTo } = this.props
     if (!authed) {
-      goTo!('/login')
       return
     }
     if (!isVerifide) {
@@ -242,48 +241,11 @@ export class HomeComponent extends Component<IHomeComponentProps, IHomeComponent
       <div className={classes.root}>
         <div className={classes.appFrame}>
           <HomeHeader onToggleDrawer={this.handleDrawerToggle} drawerStatus={this.state.drawerOpen} />
-          <Hidden mdUp>
-            <Drawer
-              variant='temporary'
-              open={this.state.drawerOpen}
-              classes={{
-                paper: classes.drawerPaper,
-              }}
-              onClose={this.handleDrawerToggle}
-              ModalProps={{
-                keepMounted: true, // Better open performance on mobile.
-              }}
-            >
-              <div>
-                <div className={classes.drawerHeader} />
-                <MenuList style={{ color: 'rgb(117, 117, 117)', width: '210px' }}>
-                  <Divider />
-                  {drawer}
-                </MenuList>
-              </div>
-            </Drawer>
-          </Hidden>
-          <Hidden smDown implementation='js'>
-            <Drawer
-              variant='persistent'
-              open={this.state.drawerOpen}
-              classes={{
-                paper: classes.drawerPaperLarge,
-              }}
-            >
-              <div>
-                <MenuList className={classes.menu} style={{ color: 'rgb(117, 117, 117)', width: '210px' }}>
-                  {drawer}
-                </MenuList>
-              </div>
-            </Drawer>
-          </Hidden>
           <main
             className={classNames(classes.content, classes[`content-${anchor}`], {
-              [classes.contentShift]: drawerOpen,
               [classes[`contentShift-${anchor}`]]: drawerOpen,
             })}
-          >
+          >Testing
             <HR enabled={loaded!} data={{ mergedPosts, loadDataStream, hasMorePosts }} />
           </main>
         </div>
