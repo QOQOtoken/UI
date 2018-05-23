@@ -240,7 +240,7 @@ export class HomeComponent extends Component<IHomeComponentProps, IHomeComponent
     return (
       <div className={classes.root}>
         <div className={classes.appFrame}>
-          <HomeHeader onToggleDrawer={this.handleDrawerToggle} drawerStatus={this.state.drawerOpen} />
+          <HomeHeader onToggleDrawer={this.handleDrawerToggle} drawerStatus={this.state.drawerOpen} classes={menuItem: ''} />
           <main
             className={classNames(classes.content, classes[`content-${anchor}`], {
               [classes[`contentShift-${anchor}`]]: drawerOpen,

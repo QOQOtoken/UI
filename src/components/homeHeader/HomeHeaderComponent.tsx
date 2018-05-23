@@ -18,6 +18,7 @@ import Hidden from 'material-ui/Hidden'
 import NotificationsIcon from 'material-ui-icons/Notifications'
 import Tooltip from 'material-ui/Tooltip'
 import Typography from 'material-ui/Typography'
+import Grid from 'material-ui/Grid'
 import { Manager, Target, Popper } from 'react-popper'
 import { withStyles } from 'material-ui/styles'
 import { getTranslate, getActiveLanguage } from 'react-localize-redux'
@@ -174,20 +175,46 @@ export class HomeHeaderComponent extends Component<IHomeHeaderComponentProps, IH
 
   // Render app DOM component
   render () {
+    console.log(this.props)
     const { classes , translate, theme} = this.props
     const anchor = theme.direction === 'rtl' ? 'right' : 'left'
     return (
 
-      <AppBar position='fixed' color='secondary'>
-        <Toolbar>
+      <AppBar position='fixed' color='secondary' >
+        <Toolbar style={{ height: '150px' }} >
           {/* Header title */}
           <Typography variant='title' color='primary' style={{ marginLeft: '15px' }} >
-            {config.settings.appName}
+          <img src={require('../../assets/images/qoqo-logo.png')} width='160px'></img>
           </Typography>
           <div className='homeHeader__title-root'>
           <Hidden smDown>
            <div className={classNames({'homeHeader__title-left': anchor === 'left', 'homeHeader__title-right': anchor === 'right' })}>{this.props.title}</div> 
            </Hidden>
+           <div>
+           <Grid container spacing={24}
+           justify='center'>
+
+            <Grid item xs={1}>
+              <Paper className='menuItem'>{classes.paper}</Paper>
+            </Grid>
+            <Grid item xs={2}>
+              <Paper className='menuItem'>Trending</Paper>
+            </Grid>
+            <Grid item xs={2}>
+              <Paper className='menuItem'>Latest</Paper>
+            </Grid>
+            <Grid item xs={2}>
+              <Paper className='menuItem'>Best</Paper>
+            </Grid>
+            <Grid item xs={2}>
+              <Paper className='menuItem'>Topics</Paper>
+            </Grid>
+            <Grid item xs={3}>
+              <Paper className='menuItem'>Search</Paper>
+            </Grid>
+           </Grid>
+     </div>
+
           </div>
 
           {/* Notification */}
